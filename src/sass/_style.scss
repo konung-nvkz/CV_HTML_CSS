@@ -1,0 +1,222 @@
+
+// зададим общие настройки
+body {
+    font-family: 'Roboto', sans-serif; //укажем основные шрифты
+    background-color: $back; // зададим цвет фона
+    color: $text; //укажем основной цвет текста
+    position: absolute;
+	margin: 0 25px 0 25px; //сделаем отступы по бокам, чтобы страница не прилипала к краям
+    }
+
+// Зададим настройки для самого верхнего меню. Классы .container, .menu и его производные
+.container {
+	min-height: 40px; //зададим минимальную выссоту
+}
+nav {
+	position: fixed; // закрепим меню сверху
+	width: 100%; //зададим ширину
+	height: 60px; //и высоту
+	z-index: 2; //сделаем, чтобы меню всегда было на переднем плане
+	background-color: $firstmenuback; //цвет фона меню
+	// margin-bottom: 10px; //отступ снизу
+	// margin-right: 25px;
+}
+//пробежимся по пунктам в меню
+.menu {
+	display: flex; //установим резиновое отображение
+	justify-content: space-between; //выровняем объекты
+	padding: 13px 50px; //заададим отступы от текста до внутренней границы блока
+	margin: 0;
+	// margin-right: 15px;	
+	list-style-type: none; // уберём точки ненумероанного списка
+	.menu_link {
+		color: $firstmenutext; //зададим цвет текста
+		font-size: 24px; //размер шрифта
+		font-weight: 400; //и его жирность
+		text-decoration: none; //уберём подчеркивание у ссылок
+		text-align: center; //выровням элементы по центру
+	}
+	.menu_item {
+		border-right: 3px dotted $firstmenuborder; //сделаем разделители пунктов мню точками
+		padding-right:70px; //зададим внутренние отступы
+		// ниже настроим последний элемент меню
+		&:last-child {
+            border: none; //уберём для него границу, чтобы не уплывал
+            padding-right: 28px; //зададим внутренний отступ
+        }
+	}
+}
+// зададим стили подзаголовка
+.subheader {
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	height: 84px;
+	background-color: rgba(0,0,0, .5);
+	
+	.subheader_logo {
+		display: block;
+		max-width: 100%;
+		margin-top: 16px;
+	}
+	.subheader_official {
+		margin: 26px 22px 0 0;
+		opacity: 0.5;
+		color: #ffffff;
+		font-size: 21px;
+		font-weight: 400;
+		text-align: center;
+	}
+	.subheader_call {
+		//text-transform: uppercase;
+		color: #ffffff;
+		font-size: 22px;
+		font-weight: 300;
+		margin-top: -19px;
+		text-align: right;
+		margin-right: 10px;
+		padding-right: 28px;
+	}
+	.subheader_telegram {
+		display: block;
+		color: #ffffff;
+		font-size: 22px;
+		font-weight: 400;
+		text-align: right;
+		line-height: 12px;
+		margin-right: 10px;
+		padding-right: 18px;
+		text-decoration: none;
+	}
+	.subheader_btn {
+		margin-top: 0;
+		width: 170px;
+		height: 40px;
+		box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+		border: none;
+		border-radius: 5px;
+		background-image: linear-gradient(to bottom, #f2bb62 0%, #423c32, 80%);
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 400;
+		
+		
+	}
+}
+.experience {
+    // margin-top: 400 px;
+    padding-top: 100px; //вверхний отступ от границы блока
+	
+}
+.university {
+	font: weight 400;
+}
+.portrait {
+	width: 50px;
+	height: 30px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url('img/photo_big.jpg');
+}
+li {
+	list-style-type: none;
+}
+experience {
+	display: block;
+}
+.coursename {
+	font-family: Roboto;
+	font-weight: 400;
+	margin-left: 25px;
+}
+.experience {
+	display: block;
+	margin-top: 50px;
+}
+.education {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.university {
+	margin: 20px 0 20px 20px;
+}
+.brand{
+	
+	margin: 10px;
+}
+.footer_divider {
+	width: 299px;
+	height: 4px;
+	background-color: #1fbad6;
+	margin: 0 auto;
+}
+.footer_social {
+	width: 200px;
+	display: flex;
+	// flex-direction: column;// можем задать выравнивание значков соцсетей в ряд
+	justify-content: space-between;
+    
+}
+.footer_social_item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 4px;
+	width: 50px;
+	height: 50px;
+	background-color: #0088cc;
+	border-radius: 100%;
+	i {
+		color: #fff;       
+	}
+}
+.footer_links {
+	width: 390px;
+	margin: 0 auto;
+}
+.footer_links_main {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px;
+	a {
+		color: #070716;
+		font-size: 15px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+}
+.footer_links_sub {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	a {
+		color: #999999;
+		font-size: 11px;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+}
+.footer_links_lang {
+	display: block;
+	margin: 0 auto;
+	color: #1fbad6;
+	font-size: 11px;
+	font-weight: 400;
+	margin-top: 19px;
+	text-transform: uppercase;
+	text-align: center;
+}
+    /* Not to be proud of yet, but later I will add up something here*/
+/*зададим разделители между пунктами меню*/
+/* .footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 32px; }
+.footer_wrapper > div {
+    width: 33%; }
+    .footer_wrapper > div:nth-child(3) {
+        display: flex;
+        justify-content: flex-end; } */
