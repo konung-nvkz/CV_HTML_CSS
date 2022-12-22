@@ -5,7 +5,6 @@ body {
     background-color: $back; // зададим цвет фона
     color: $text; //укажем основной цвет текста
     position: absolute;
-	margin: 0 25px 0 25px; //сделаем отступы по бокам, чтобы страница не прилипала к краям
     }
 
 // Зададим настройки для самого верхнего меню. Классы .container, .menu и его производные
@@ -18,8 +17,7 @@ nav {
 	height: 60px; //и высоту
 	z-index: 2; //сделаем, чтобы меню всегда было на переднем плане
 	background-color: $firstmenuback; //цвет фона меню
-	// margin-bottom: 10px; //отступ снизу
-	// margin-right: 25px;
+	
 }
 //пробежимся по пунктам в меню
 .menu {
@@ -49,67 +47,82 @@ nav {
 // зададим стили подзаголовка
 .subheader {
 	position: absolute;
+	// display: flex;
 	top: 50px;
 	width: 100%;
-	height: 84px;
+	height: 130px;
 	background-color: rgba(0,0,0, .5);
-	
-	.subheader_logo {
-		display: block;
-		max-width: 100%;
-		margin-top: 16px;
-	}
+	align-items: right;
+
 	.subheader_official {
-		margin: 26px 22px 0 0;
+		// margin: 26px 22px 0 0;
 		opacity: 0.5;
 		color: #ffffff;
 		font-size: 21px;
 		font-weight: 400;
 		text-align: center;
+		width:50%;
+		text-transform: uppercase;
 	}
-	.subheader_call {
-		//text-transform: uppercase;
-		color: #ffffff;
-		font-size: 22px;
-		font-weight: 300;
-		margin-top: -19px;
-		text-align: right;
-		margin-right: 10px;
-		padding-right: 28px;
+	.img {
+		border-radius:  50px;
+		width: 100px;
+		height: 100px;
+		border: 2px solid grey;
+		align-items: right;
+		margin: 20px 10px;
+		// padding: 10px;
 	}
-	.subheader_telegram {
-		display: block;
-		color: #ffffff;
-		font-size: 22px;
-		font-weight: 400;
-		text-align: right;
-		line-height: 12px;
-		margin-right: 10px;
-		padding-right: 18px;
-		text-decoration: none;
-	}
-	.subheader_btn {
-		margin-top: 0;
-		width: 170px;
-		height: 40px;
-		box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
-		border: none;
-		border-radius: 5px;
-		background-image: linear-gradient(to bottom, #f2bb62 0%, #423c32, 80%);
-		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
-		color: #ffffff;
-		font-size: 14px;
-		font-weight: 400;
+	// .subheader_logo {
+	// 	display: block;
+	// 	max-width: 100%;
+	// 	margin-top: 16px;
+	// }
+	
+	// .subheader_call {
+	// 	//text-transform: uppercase;
+	// 	color: #ffffff;
+	// 	font-size: 22px;
+	// 	font-weight: 300;
+	// 	margin-top: -19px;
+	// 	text-align: right;
+	// 	margin-right: 10px;
+	// 	padding-right: 28px;
+	// }
+	// .subheader_telegram {
+	// 	display: block;
+	// 	color: #ffffff;
+	// 	font-size: 22px;
+	// 	font-weight: 400;
+	// 	text-align: right;
+	// 	line-height: 12px;
+	// 	margin-right: 10px;
+	// 	padding-right: 18px;
+	// 	text-decoration: none;
+	// }
+	// .subheader_btn {
+	// 	margin-top: 0;
+	// 	width: 170px;
+	// 	height: 40px;
+	// 	box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+	// 	border: none;
+	// 	border-radius: 5px;
+	// 	background-image: linear-gradient(to bottom, #f2bb62 0%, #423c32, 80%);
+	// 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+	// 	color: #ffffff;
+	// 	font-size: 14px;
+	// 	font-weight: 400;
 		
 		
-	}
+	// }
 }
 .experience {
 	display: block;
     // margin-top: 400 px;
-    padding-top: 100px; //вверхний отступ от границы блока
+    padding-top: 200px; //вверхний отступ от границы блока
 	
 }
+	
 .university {
 	font: weight 400;
 }

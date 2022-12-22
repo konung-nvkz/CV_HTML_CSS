@@ -36,7 +36,7 @@ module.exports = {
     //начинаем работу с плагинами
 	plugins: [
 		new HtmlWebpackPlugin({
-				title: 'Some info about Egor', // Указываем заголовок нашей страницы
+				title: 'CV for Egor Kiprin', // Указываем заголовок нашей страницы
 				template: path.resolve(__dirname, './src/template.html'), // шаблон
 				filename: 'index.html', // название выходного файла
 		}),
