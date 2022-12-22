@@ -105,6 +105,7 @@ nav {
 	}
 }
 .experience {
+	display: block;
     // margin-top: 400 px;
     padding-top: 100px; //вверхний отступ от границы блока
 	
@@ -118,16 +119,12 @@ nav {
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-image: url('img/photo_big.jpg');
+	background-image: url('img/photo_main.jpg');
 }
 li {
 	list-style-type: none;
 }
-experience {
-	display: block;
-}
-.coursename {
-	font-family: Roboto;
+.coursename {	
 	font-weight: 400;
 	margin-left: 25px;
 }
@@ -142,81 +139,73 @@ experience {
 .university {
 	margin: 20px 0 20px 20px;
 }
-.brand{
-	
+.brand {
 	margin: 10px;
 }
-.footer_divider {
-	width: 299px;
-	height: 4px;
-	background-color: #1fbad6;
-	margin: 0 auto;
-}
-.footer_social {
-	width: 200px;
-	display: flex;
+// .footer_divider {
+// 	width: 299px;
+// 	height: 4px;
+// 	background-color: #1fbad6;
+// 	margin: 0 auto;
+// }
+.footer_social {//стили для блока значков соцсетей
+	width: 299px; //ширина
+	display: flex; // "резиновое" отображение
 	// flex-direction: column;// можем задать выравнивание значков соцсетей в ряд
-	justify-content: space-between;
+	// justify-content: space-between;
     
 }
-.footer_social_item {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 4px;
-	width: 50px;
-	height: 50px;
-	background-color: #0088cc;
-	border-radius: 100%;
-	i {
-		color: #fff;       
-	}
+	.footer_social_item { //стилизуем каждую из иконок
+		display: flex;
+		justify-content: center; //выровняем содержимое
+		align-items: center;
+		margin: 0 4px; // зададим внешние отступы
+		// width: 45px; //зададим ширину
+		// height: 45px; // укажем высоту
+		background-color: $firstmenuback; 	// background-color: #0088cc;
+		border-radius: 100%; //скруглим
+		text-decoration: none; //уберём подчеркивание у ссылок
+			i {
+				color: $firstmenutext;// текст элементов шрифта;	
+				font-size: 43px;			
+			}
+			i:hover {
+				color: $firstmenuback;
+				background-color: $firstmenutext;
+				border-radius: 100%; //скруглим
+
+			}		
 }
 .footer_links {
+	display: flex;
+	justify-content: space-between;
 	width: 390px;
 	margin: 0 auto;
+		a {
+			text-decoration: none; //уберём подчеркивание у ссылок
+		}
+		
+	
 }
-.footer_links_main {
-	display: flex;
-	justify-content: space-between;
-	padding: 0 10px;
-	a {
-		color: #070716;
-		font-size: 15px;
-		font-weight: 400;
-		text-transform: uppercase;
-	}
-}
-.footer_links_sub {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 10px;
-	a {
-		color: #999999;
-		font-size: 11px;
-		font-weight: 300;
-		text-transform: uppercase;
-	}
-}
-.footer_links_lang {
-	display: block;
-	margin: 0 auto;
-	color: #1fbad6;
-	font-size: 11px;
-	font-weight: 400;
-	margin-top: 19px;
-	text-transform: uppercase;
-	text-align: center;
-}
-    /* Not to be proud of yet, but later I will add up something here*/
-/*зададим разделители между пунктами меню*/
-/* .footer_wrapper {
+
+.footer_wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 32px; }
+    padding-top: 32px;	
+	text-decoration: none; //уберём подчеркивание у ссылок
+}
+
 .footer_wrapper > div {
-    width: 33%; }
-    .footer_wrapper > div:nth-child(3) {
+    width: 50%; }
+    .footer_wrapper > div:nth-child(2) {
         display: flex;
-        justify-content: flex-end; } */
+        justify-content: flex-end; }
+.lastline {
+	display: block;
+	position: relative;
+	padding: 20px;
+	text-align: center;
+	font-size: 11px;
+	font-weight: 300;
+}

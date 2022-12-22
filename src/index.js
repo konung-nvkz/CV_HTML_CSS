@@ -1,9 +1,9 @@
 import './index.scss';
-import image from './img/photo_big.jpg';
+import image from './img/photo_main.jpg';
 
 // создаем элемент заголовка
 const heading = document.createElement('h1')
-heading.textContent = 'Здесь должно быть резюме!'
+heading.textContent = 'Собираем резюме!'
 
 // добавляем заголовок в DOM
 const root = document.querySelector('#root')
