@@ -119,22 +119,21 @@ nav {
 }
 .experience {
 	display: block;
-    // margin-top: 400 px;
-    // padding-top: 200px; //вверхний отступ от границы блока
-	
-}
+	margin-top: 50px;
+	}	
+
 	
 .university {
 	font: weight 400;
 }
-.portrait {
-	width: 50px;
-	height: 30px;
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url('img/photo_main.jpg');
-}
+// .portrait {
+// 	width: 50px;
+// 	height: 30px;
+// 	background-size: contain;
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+// 	background-image: url('img/photo_main.jpg');
+// }
 li {
 	list-style-type: none;
 }
@@ -142,10 +141,7 @@ li {
 	font-weight: 400;
 	margin-left: 25px;
 }
-.experience {
-	display: block;
-	margin-top: 50px;
-}
+
 .education {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -162,64 +158,7 @@ li {
 // 	background-color: #1fbad6;
 // 	margin: 0 auto;
 // }
-.footer_social {//стили для блока значков соцсетей
-	width: 299px; //ширина
-	display: flex; // "резиновое" отображение
-	// flex-direction: column;// можем задать выравнивание значков соцсетей в ряд
-	// justify-content: space-between;
-    
-}
-	.footer_social_item { //стилизуем каждую из иконок
-		display: flex;
-		justify-content: center; //выровняем содержимое
-		align-items: center;
-		margin: 0 4px; // зададим внешние отступы
-		// width: 45px; //зададим ширину
-		// height: 45px; // укажем высоту
-		background-color: $firstmenuback; 	// background-color: #0088cc;
-		border-radius: 100%; //скруглим
-		text-decoration: none; //уберём подчеркивание у ссылок
-			i {
-				color: $firstmenutext;// текст элементов шрифта;	
-				font-size: 43px;			
-			}
-			i:hover {
-				color: $firstmenuback;
-				background-color: $firstmenutext;
-				border-radius: 100%; //скруглим
-
-			}		
-}
-.footer_links {
-	display: flex;
-	justify-content: space-between;
-	width: 390px;
-	margin: 0 auto;
-		a {
-			text-decoration: none; //уберём подчеркивание у ссылок
-		}
-		
-	
-}
-
-.footer_wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-top: 32px;	
-	text-decoration: none; //уберём подчеркивание у ссылок
-}
-
-.footer_wrapper > div {
-    width: 50%; }
-    .footer_wrapper > div:nth-child(2) {
-        display: flex;
-        justify-content: flex-end; }
-.lastline {
-	display: block;
-	position: relative;
-	padding: 20px;
-	text-align: center;
-	font-size: 11px;
-	font-weight: 300;
+.small_icon {
+	height: 25px;
+	width: 20px;
 }

@@ -10,3 +10,5 @@ const root = document.querySelector('#root')
 root.append(heading)
 const img = new Image();
 
+
+
