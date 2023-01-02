@@ -6,7 +6,9 @@ body {
     color: $text; //укажем основной цвет текста
     position: absolute;
     }
-
+// h3 {
+// 	margin-bottom: 100vh;
+// 	}
 // Зададим настройки для самого верхнего меню. Классы .container, .menu и его производные
 .container {
 	min-height: 40px; //зададим минимальную выссоту
