@@ -33,11 +33,12 @@
     }
     
     &__links {
-        width: 390px;
+       // width: 390px;
         display: flex;
         justify-content: flex-end;
         //justify-content: center;
        // margin-top: 10px;
+        margin-right: 70px;
         list-style-type: none;       
         align-items: right;
         margin-bottom: 0;
@@ -46,8 +47,8 @@
     &__link {
         // display: flex;
         // justify-content: space-between;
-        width: 30%;
-        height: 35px;
+        width: 28%;
+        height: 70px;
         border: 2px solid $firstmenuback;
         //color: #6b6b6b;
         color: $firstmenutext;
