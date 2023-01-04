@@ -6,124 +6,14 @@ body {
     color: $text; //укажем основной цвет текста
     position: absolute;
     }
-// h3 {
-// 	margin-bottom: 100vh;
-// 	}
-// Зададим настройки для самого верхнего меню. Классы .container, .menu и его производные
-.container {
-	min-height: 40px; //зададим минимальную выссоту
-}
-nav {
-	position: fixed; // закрепим меню сверху
-	width: 100%; //зададим ширину
-	height: 60px; //и высоту
-	z-index: 2; //сделаем, чтобы меню всегда было на переднем плане
-	background-color: $firstmenuback; //цвет фона меню
-	top: 0;
-}
-//пробежимся по пунктам в меню
-.menu {
-	display: flex; //установим резиновое отображение
-	justify-content: space-between; //выровняем объекты
-	padding: 13px 50px; //заададим отступы от текста до внутренней границы блока
-	margin: 0;
-	// margin-right: 15px;	
-	list-style-type: none; // уберём точки ненумероанного списка
-	.menu_link {
-		color: $firstmenutext; //зададим цвет текста
-		font-size: 24px; //размер шрифта
-		font-weight: 400; //и его жирность
-		text-decoration: none; //уберём подчеркивание у ссылок
-		text-align: center; //выровням элементы по центру
-	}
-	.menu_item {
-		border-right: 3px dotted $firstmenuborder; //сделаем разделители пунктов мню точками
-		padding-right:70px; //зададим внутренние отступы
-		// ниже настроим последний элемент меню
-		&:last-child {
-            border: none; //уберём для него границу, чтобы не уплывал
-            padding-right: 28px; //зададим внутренний отступ
-        }
-	}
-}
-// зададим стили подзаголовка
-.subheader {
-	margin-top: 60px; //сзададим отступ, чтобы не прилипало к верхнему меню
-	background-color: rgba(0,0,0, .5); //зададим цвет фона и прозрачность
-	display: flex; //установим резиновое отображение
-	justify-content: space-between; // организуем выравнивание элементов
-
-	.subheader_name {		
-		opacity: 0.5; //установим прозрачность
-		color: #ffffff;
-		font-size: 28px;
-		font-weight: 900;
-		text-align: center;
-		text-transform: uppercase;
-		padding-top: 10px;
-	}
-	.subheader_info {
-		opacity: 0.5; //установим прозрачность
-		color: #ffffff;
-		font-size: 26px;
-		font-weight: 400;
-		text-align: center;
-		// text-transform: uppercase;
-		padding-top: 10px;
-	
-	}
-	.img {
-		border-radius:  50px; //скруглим фото
-		width: 100px; //зададим его ширину
-		height: 100px; //зададим высоту фото
-		border: 2px solid grey; //установим границу, которая будет обрамлять
-		align-items: left;
-		margin: 20px 10px 10px 50px;
-		// padding: 10px;
-	}	
-	
-	.subheader_call {
-		//text-transform: uppercase;
-		color: #ffffff;
-		font-size: 19px;
-		font-weight: 300;
-		text-align: right;
-		margin-right: 10px;
-		padding-right: 28px;
-	}
-	.subheader_telegram {
-		display: block;
-		color: #ffffff;
-		font-size: 22px;
-		font-weight: 400;
-		text-align: center;
-		line-height: 12px;
-		margin-right: 10px;
-		padding-right: 18px;
-		text-decoration: none;
-	}
-	.subheader_btn {
-		margin-top: 20px;
-		margin-left: 50px;
-		width: 170px;
-		height: 40px;
-		box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
-		border: none;
-		border-radius: 7px;
-		background-image: linear-gradient(to top, #a56908 0%, #d8bb8a, 80%);
-		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
-		color: #ffffff;
-		font-size: 14px;
-		font-weight: 400;
-		
-		
-	}
-}
 .experience {
 	display: block;
-	margin-top: 50px;
+	margin-top: 70px;
 	}	
-
+.skills {
+	display: block;
+	margin-top: 70px;
+	}	
 	
 .university {
 	font: weight 400;
@@ -145,7 +35,7 @@ li {
 }
 
 .education {
-	margin-top: 20px;
+	margin-top: 70px;
 	margin-bottom: 20px;
 }
 .university {

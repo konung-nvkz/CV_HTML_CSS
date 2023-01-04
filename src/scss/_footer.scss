@@ -1,6 +1,7 @@
 .footer{
     hr {
-        background-color: $firstmenuback;  
+        background-color: $firstmenuback; 
+        margin-top:200px;
     }
     &__social {//стили для блока значков соцсетей
         width: 299px; //ширина
@@ -47,7 +48,7 @@
     &__link {
         // display: flex;
         // justify-content: space-between;
-        width: 28%;
+        width: 33%;
         height: 70px;
         border: 2px solid $firstmenuback;
         //color: #6b6b6b;

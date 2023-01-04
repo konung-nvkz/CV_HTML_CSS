@@ -19,36 +19,31 @@
             <nav>
                 <div class="container">
                     <ul class="menu">                        
-                        <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
-                        <li class="menu_item"><a href="#about" class="menu_link">Обо мне</a></li>
-                        <li class="menu_item"><a href="#job" class="menu_link">Опыт работы </a></li>
-                        <li class="menu_item"><a href="#study" class="menu_link">Образование</a></li>
-                        <li class="menu_item"><a href="#footer" class="menu_link">Контакты</a></li>                        
+                        <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+                        <li class="menu__item"><a href="#about" class="menu__link">Обо мне</a></li>
+                        <li class="menu__item"><a href="#job" class="menu__link">Опыт работы </a></li>
+                        <li class="menu__item"><a href="#study" class="menu__link">Образование</a></li>
+                        <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>                        
                     </ul>
                 </div>
-            </nav>
-            <!-- <a name="#up" ></a> -->
+            </nav>            
             <div class="subheader" id="up">                
-                <div class="subheader_call">
-                    <button class="subheader_btn">
+                <div class="subheader__call">
+                    <button class="subheader__btn">
                         <i class="fa-brands fa-telegram"></i>
-                        <a href="https://t.me/kiprin_egor" class="subheader_telegram">kiprin_egor</a>
+                        <a href="https://t.me/kiprin_egor" class="subheader__telegram">kiprin_egor</a>
                     </button>
                 </div> 
                 <div>
-                    <div class="subheader_name">Егор Киприн </div>
-                    <div class="subheader_info"> Разработчик </div>
-                    <div class="subheader_info"> 37 лет </div>
+                    <div class="subheader__name">Егор Киприн </div>
+                    <div class="subheader__info"> Разработчик </div>
+                    <div class="subheader__info"> 37 лет </div>
                 </div>                            
-                <div><img src="img/photo_main.jpg" class="img" alt="portrait"> </div>   
+                <div><img src="img/photo_main.jpg" class="subheader__img" alt="portrait"> </div>   
                 
             </div> 
-        </header>
-        <!-- <br><br><br><br><br><br><br> -->
-        
-
-
-        <a name="job"></a>
+        </header>     
+        <a id="job"></a>
         <div class="experience"> 
             
             <h3>Опыт работы:</h3>    
@@ -87,7 +82,7 @@
             Победитель городского конкурса профессионального мастерства.</div>
             <br>
     
-        </div><a name="study"></a>
+        </div><a id="study"></a>
         
             <div class="education"> <h2>Образование: <br> </h2>
                 
@@ -106,8 +101,10 @@
                         <li>
                             <div class="coursename"> <i class="fa-solid fa-graduation-cap"></i>Курс: «Cybersecurity Awareness Training FY 21 SEC2»
                                 <details><summary>подробнее</summary>
-                                    <div class="university">Организатор курса: «Komatsu»</div> 
-                                    <div class="finishdate"> Дата завершения: январь 2022</div>
+                                    <p><div class="university">Организатор курса: «Komatsu»</div></p>
+                                    <p><div class="finishdate"> Дата завершения: январь 2022</div></p> 
+                                    <div class="university">Организатор курса: «Komatsu»</div>
+                                    
                                     <div> </div>
                                 </details>                                
                             </div>
@@ -160,7 +157,7 @@
                         
                         <h5> Информация о курсах, прослушанных ранее, доступна по требованию </h5>
     
-                        <a name="about"></a>
+                        <a id="about"></a>
                         <div class="skills"><h4>Навыки</h4></div>
                             <div class="hardskills">
                                 <i class="fa-brands fa-windows"></i> Windows<br>
@@ -195,15 +192,16 @@
                 </ul>           
             </div>        
         </div>
-        <!-- <a name="contacts"></a> -->
-        <!-- <a href="#up" class="menu_link">Наверх</a> -->
+        
         <a href="#up" class="pageup">
             <img src="./img/icons/up.svg" alt="up">
+            
         </a>
         <section class="footer">
-            <a name="footer"></a>
+            <a id="contacts"></a>
             <hr>
                 <div class="footer__wrapper">
+                    <h3>Контакты:</h3><br>
                 <!-- Если не оборачивать каждый блок в обертку <div> - получится криво 
                 В частности, на разных устройствах будет либо наплыать друг на друга, либо разъезжаться -->
                     <div>
