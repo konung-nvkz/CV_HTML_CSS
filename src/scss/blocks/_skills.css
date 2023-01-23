@@ -1,0 +1,15 @@
+.skills {
+  padding-top: 120px;
+}
+
+.skills_item {
+  width: 270px;
+  height: 270px;
+  border: 1px;
+}
+
+.grid-container {
+  width: 270px;
+  height: 270px;
+  border: 1px;
+}

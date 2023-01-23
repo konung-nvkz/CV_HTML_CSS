@@ -39,10 +39,18 @@ module.exports = {
 				title: 'CV for Egor Kiprin', // Указываем заголовок нашей страницы
 				template: path.resolve(__dirname, './src/template.html'), // шаблон
 				filename: 'index.html', // название выходного файла
+				chunks: ['main']
 		}),
-			new MiniCssExtractPlugin({
-				filename: '[name].[contenthash].css',
+		new HtmlWebpackPlugin({
+			//title: 'CV for Egor Kiprin', // Указываем заголовок нашей страницы
+			template: path.resolve(__dirname, './src/policy.html'), // шаблон
+			filename: 'policy.html', // название выходного файла
+			chunks: ['policy']
 			}),
+		//new CleanWebpackPlugin(),
+		new MiniCssExtractPlugin({
+			filename: '[name].[contenthash].css',
+		}),
 	],
 	
 	module: {
@@ -100,7 +108,7 @@ module.exports = {
 				}
 			}
 			],
-			type: 'asset/resource',
+			type: 'asset/inline',
 		},
 		{
 			test: /\.m?js$/i,

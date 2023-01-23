@@ -1,231 +1,626 @@
-<!-- src/template.html -->
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-        <!-- <link rel="preload" href="webfonts/fa-brands-400.woff2" as="font">
-        <link rel="preload" href="webfonts/fa-solid-900.woff2" as="font">
-        <link rel="preload" href="webfonts/fa-regular-400.woff2" as="font"> -->
-        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">--> 
-                
-        <title>Egor Kiprin's CV</title>
-    </head>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <meta name="title" content="Мое портфолио">
+    <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
 
-    <body>       
-        <header>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Мое портфолио">
+    <meta property="og:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Мое портфолио">
+    <meta property="twitter:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Favicon  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon//favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+</head>
+<body>
+    <aside class="sidepanel">
+        <a href="https://t.me/kiprin_egor" class="sidepanel__link"><img src="./icons/social/telegram.svg" alt="Telegram"></a>
+        <a href="mailto:kiprin.egor@yandex.ru" class="sidepanel__link"><img src="./icons/social/email.svg" alt="E-mail"></a>
+        <a href="https://github.com/konung-nvkz" class="sidepanel__link"><img src="./icons/social/github.svg" alt="GitHub"></a>
+        <div class="sidepanel__text"><span>Контакты</span></div>
+    </aside>
+
+    <div class="menu">
+        <div class="menu__block">
+            <div class="menu__close">               
+                <img src="./icons/close.svg" alt="close"></a>
+            </div>
             <nav>
-                <div class="container">
-                    <ul class="menu">                        
-                        <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-                        <li class="menu__item"><a href="#about" class="menu__link">Обо мне</a></li>
-                        <li class="menu__item"><a href="#job" class="menu__link">Опыт работы </a></li>
-                        <li class="menu__item"><a href="#study" class="menu__link">Образование</a></li>
-                        <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>                        
-                    </ul>
+                <ul class="menu__list">
+                    <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
+                    <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+            <div class="menu__social">
+                <a href="https://t.me/kiprin_egor"><img src="./icons/social/telegram.svg" alt="Telegram"></a>
+                <a href="mailto:kiprin.egor@yandex.ru"><img src="./icons/social/email.svg" alt="E-mail"></a>
+                <a href="https://github.com/konung-nvkz"><img src="./icons/social/github.svg" alt="GitHub"></a>
+                </a>
+            </div>
+        </div>
+        <div class="menu__overlay"></div>
+    </div>
+
+    <section class="promo">
+        <div id="up" class="hamburger">
+            <span></span>
+            <span class="long"></span>
+            <span></span>
+        </div>
+        <div class="container">
+            <div class="title title__fs16 frame promo__subtitle">Меня зовут Егор Киприн</div>
+            <h1 class="title title__fs20 promo__title frame">Я web-разработчик <br>из города Новокузнецк</h1>
+            <div class="promo__btns">
+                <a href="#portfolio" class="promo__link btn">Портфолио</a>
+                <a href="#about" class="promo__link frame">Про меня</a>            
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about__wrapper">
+                <div class="about__photo">
+                    <img src="img/main_photo.jpg" alt="photo">
+                </div>                
+                <div id="about" class="about__descr">
+                    <h2  class="title title__fs16 about__title">Про меня</h2>
+                    <div class="title title__fs36 about__subtitle">Меня зовут Егор</div>
+                    <div class="divider"></div>
+                    <p class="about__text"> Впоследствии я добавлю сюда разный текст. А пока стандартное. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 </div>
-            </nav>            
-            <div class="subheader" id="up">                
-                <div class="subheader__call">
-                    <button class="subheader__btn">
-                        <i class="fa-brands fa-telegram"></i>
-                        <a href="https://t.me/kiprin_egor" class="subheader__telegram">kiprin_egor</a>
-                    </button>
-                </div> 
-                <div>
-                    <div class="subheader__name">Егор Киприн </div>
-                    <div class="subheader__info"> Разработчик </div>
-                    <div class="subheader__info"> 37 лет </div>
-                </div>                            
-                <div><img src="img/photo_main.jpg" class="subheader__img" alt="portrait"> </div>   
-                
-            </div> 
-        </header>     
-        <a id="job"></a>
-        <div class="experience"> 
-            
-            <h3>Опыт работы:</h3>    
-            <div class="company">Работодатель:<br>ООО «Джой Глобал» (Komatsu Russia).  </div>
-            <div class="workdates">Начало/завершение работы:<br>август 2015 - ноябрь 2022</div>
-            <div class="occupation">Должность:<br> Специалист по логистике</div>
-            <div class="achievements">Основные обязанности / достижения<br>
-                Логистика поставок запчастей для горношахтного оборудования из США, Польши (профилирование, снижение транспортных расходов); работа в SAP (модули MM, SD, LW, PP); написание инструкций по использованию транзакций.</div>
-            <br>
-            <div class="company">Работодатель:<br> МБОУ «СОШ № 56», г. Новокузнецк</div>
-            <div class="workdates">Начало/завершение работы:<br>октябрь 2014 - июнь 2015</div>
-            <div class="occupation">Должность:<br>Учитель английского языка</div>
-            <div class="achievements">Основные обязанности / достижения<br>
-                Обучение школьников английскому языку в рамках требований ФГОС. Подготовил учебные программы для 2-7 классов.</div>
-            <br>
-            <div class="company">Работодатель: <br> ФГБОУ ВПО ЦПО НФИ КемГУ (ранее КузГПА).</div>
-            <div class="workdates">Начало/завершение работы:<br>сентябрь 2010 – октябрь 2014</div>
-            <div class="occupation">Должность:<br>кафедры английского языка и методики преподавания</div>
-            <div class="achievements">Основные обязанности / достижения<br>
-                Подготовка и проведение занятий по английскому языку и научно-техническому переводу (НТП); разработка и внедрение практического курса НТП (компьютерный аспект).</div>
-            <br>
-            <div class="company">Работодатель: <br> ФГБОУ ВПО ЦПО НФИ КемГУ (ранее КузГПА).<br> </div>
-            <div class="workdates">Начало/завершение работы:<br>сентябрь 2009 – октябрь 2014</div>
-            <div class="occupation">Должность:<br>Начальник информационного ресурсного центра факультета иностранных языков</div>
-            <div class="achievements">Основные обязанности / достижения<br>
-                Руководство отделом <br>
-                Организация деятельности по обслуживанию, развитию и информационному обеспечению системы средств ИКТ в учебном процессе. <br>
-                Ведение  сайта факультета иностранных языков КузГПА. <br>
-                Неоднократно организовывал проведение языковой олимпиады среди школьников и студентов «LinguaSTAR».</div>
-            <br>
-            <div class="company">Работодатель:<br> МП «Редакция газеты «Новокузнецк»</div>
-            <div class="workdates">Начало/завершение работы:<br>август 2007 – сентябрь 2009</div>
-            <div class="occupation">Должность:<br>Начальник отдела новостей</div>
-            <div class="achievements">Основные обязанности / достижения<br>
-            Поиск и обработка новостной информации для печатной газеты, написание статей, заполнение сайта издания. <br>
-            Победитель городского конкурса профессионального мастерства.</div>
-            <br>
-    
-        </div><a id="study"></a>
-        
-            <div class="education"> <h2>Образование: <br> </h2>
-                
-                <div class="university"> <i class="fa-solid fa-user-graduate"></i>
-                    <!-- эта и последующая иконки из соответствующего шрифта (подключен в SASS)  -->
-                    Высшее: Кузбасская государственная педагогическая академия (Новокузнецк)
-                    
-                        <div class="profession">Кафедра: английской филологии<br>
-                            Специальность: иностранный язык<br>
-                            Форма обучения: дневное отделение <br>
-                            Диплом с отличием<br></div>
-                        <div class="finishdate">Год окончания: 2007</div>
-                </div>
-                <ul>
-                    <div class="courses"> <h2>Дополнительное образование</h2> <br>
-                        <li>
-                            <div class="coursename"> <i class="fa-solid fa-graduation-cap"></i>Курс: «Cybersecurity Awareness Training FY 21 SEC2»
-                                <details><summary>подробнее</summary>
-                                    <p><div class="university">Организатор курса: «Komatsu»</div></p>
-                                    <p><div class="finishdate"> Дата завершения: январь 2022</div></p> 
-                                    <div class="university">Организатор курса: «Komatsu»</div>
-                                    
-                                    <div> </div>
-                                </details>                                
-                            </div>
-                        </li>
-                        <li>
-                            <div class="coursename"> <i class="fa-solid fa-graduation-cap"></i>Курс: «Komatsu's worldwide code of business conduct»
-                                <details><summary>подробнее</summary>
-                                    <div class="university">Организатор курса: «Komatsu»</div> 
-                                    <div class="finishdate">Дата завершения: март 2021</div>
-                                </details>                                
-                            </div>
-                        </li>
+                <div class="about__skills">
+                    <div class="about__skills-item">
+                        <div class="about__skills-circle">
+                            <img src="icons/about_me/web_development.svg" alt="web-dev">
+                        </div>
                         
-                        <li>
-                            <div class="coursename"> <i class="fa-solid fa-graduation-cap"></i>Курс: «Международная транспортная логистика»
-                                <details><summary>подробнее</summary>
-                                    <div class="university">Организатор курса: АНО УМЦ «Финконт»</div> 
-                                    <div class="finishdate">Дата завершения: ноябрь 2019</div>
-                                </details>                                
+                        <div>
+                            <div class="title title__fs14">
+                                Web-разработка
                             </div>
-                        </li>
-                        
-                        <li>
-                            <div class="coursename"> <i class="fa-solid fa-graduation-cap"></i>Курс: «Расширенные возможности использования MS Excel при работе с данными»
-                                <details><summary>подробнее</summary>
-                                    <div class="university">Организатор курса: АНО ДПО УЦ «Сибинфоцентр»</div> 
-                                    <div class="finishdate">Дата завершения: декабрь 2018</div>
-                                </details>                                
+                            <div class="about__skills-text">
+                                С интересом погружаюсь в особенности HTML/CSS, SCSS, Webpack. <br>
+                                Это невероятное ощущение, когда предложения "обрастают" свойствами, превращаются в структурированный, оформленный текст. <br>
+                                К силе слова добавляются визуальные эффектами, добавляя весомости там, где она нужна, обрамляя мысли в завершённые конструкции. <br>
+                                Раньше о таком было сложно  даже подумать, а сейчас всё в наших руках. Представляешь, как это должно выглядеть, а новые возможности разметки помогают превратить этто в реальность.
+
                             </div>
-                        </li>
-    
-                        <li>
-                            <div class="coursename"> <i class="fa-solid fa-graduation-cap"></i>Курс: «Compliance short: International trade compliance»
-                                <details><summary>подробнее</summary>
-                                    <div class="university">Организатор курса: «Komatsu»</div> 
-                                    <div class="finishdate">Дата завершения: декабрь 2018</div>
-                                </details>                                
-                            </div>
-                        </li>
-    
-                        <li>
-                            <div class="coursename"> <i class="fa-solid fa-graduation-cap"></i>Курс: «GDPR and the General Personal Data Protection Policy»
-                                <details><summary>подробнее</summary>
-                                    <div class="university">Организатор курса: «Komatsu» </div> 
-                                    <div class="finishdate">Дата завершения: июнь 2018</div>
-                                </details>                                
-                            </div>
-                        </li>
-                    <br>
-                        
-                        <h5> Информация о курсах, прослушанных ранее, доступна по требованию </h5>
-    
-                        <a id="about"></a>
-                        <div class="skills"><h4>Навыки</h4></div>
-                            <div class="hardskills">
-                                <i class="fa-brands fa-windows"></i> Windows<br>
-                                <i class="fa-brands fa-linux"></i> Linux:  <i class="fa-brands fa-ubuntu"></i> Ubuntu, Mint<br><br>
-                                <em>Software:</em> <br>
-                                <img src="./img/icons/sap.svg" class="small_icon" alt="SAP"> SAP (модули MM, SD, LW, PP), скрипты SAP GUI
-                                <br>
-                                <i class="fa-solid fa-file-excel"></i> MS Office: Word, Excel (макросы), PowerPoint<br><br>
-                                <em>Programming:</em> <br>
-                                <i class="fa-brands fa-js"></i> JavaScript - beginner<br><br>
-                                <h4>Web:</h4>  <br>
-                                <i class="fa-brands fa-html5"></i> HTML <br>
-                                <i class="fa-brands fa-css3-alt"></i> CSS<br>
-                                <i class="fa-brands fa-sass"></i> SCSS<br>
-                                <img src="./img/icons/webpack.svg" class="small_icon" alt="Webpack"> Webpack<br> <br>
-                                <em>Владение иностранными языками:</em><br><br>
-                                <i class="fa-solid fa-book"></i>  Английский – продвинутый уровень (С1)<br>
-                                <i class="fa-solid fa-book"></i>  Немецкий – средний уровень (B1)<br><br>
-                                <em> Иное: </em><br> <br><i class="fa-solid fa-car-side"> </i> Водительское удостоверение: кат. B.  <br>  
-                                
-    
-                            </div>
-                            <div class="softskills"> <h4>Ключевые навыки:</h4>
-                                <ul>
-                                    <li>Обучаемость; </li>
-                                    <li>Коммуникабельность;</li>
-                                    <li>Самомотивация;</li>
-                                </ul>
-                            </div>
-                        </div>    
+                        </div>
                     </div>
-                </ul>           
-            </div>        
+                    <div class="about__skills-item">
+                        <div class="about__skills-circle">
+                            <img src="icons/about_me/mobile_dev.svg" alt="mobile-dev">
+                        </div>
+                        <div>
+                            <div class="title title__fs14">
+                                Разработка приложений
+                            </div>
+                            <div class="about__skills-text">
+                                Просто магия какая-то! Сейчас с помощью кода можно решать задачи бизнеса, облегчать людям жизнь, превращая в реальность то, о чём вчера сложн было представить. <br>
+                                Многие рутинные операции возможно доверить компьютеру, а себе оставить больше времени для творчества.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__skills-item">
+                        <div class="about__skills-circle">
+                            <img src="icons/about_me/design.svg" alt="design">
+                        </div>
+                        <div>
+                            <div class="title title__fs14">
+                                Иностранные языки
+                            </div>
+                            <div class="about__skills-text">
+                                В современном мире владение иностранными языками - необходимое требование.<br>
+                                "Прокачанный" иностранный язык позволяет развиваться в профессии, читать актуальную информацию на языке оригинала, что называется, от авторов.<br>
+                                А ещё грамотный письменный и разговорный английский позволяет оперативно решать рабочие задачи, избегая ошибок, навязанных системами машинного перевода. <br>
+                                В моём арсенале помимо продвинутого английского (C1) есть ещё и немецкий (B1), что в определённых случаях также позволяет быстрее находить выход из различных ситуаций.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
-        <a href="#up" class="pageup">
-            <img src="./img/icons/up.svg" alt="up">
-            
-        </a>
-        <section class="footer">
-            <a id="contacts"></a>
-            <hr>
-                <div class="footer__wrapper">
-                    <h3>Контакты:</h3><br>
-                <!-- Если не оборачивать каждый блок в обертку <div> - получится криво 
-                В частности, на разных устройствах будет либо наплыать друг на друга, либо разъезжаться -->
-                    <div>
-                        <div class="footer__social">                           
-                            <a href="https://github.com/konung-nvkz" alt="GitHub" class="footer__social_item">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="mailto:kiprin.egor@yandex.ru" alt="Написать" class="footer__social_item">
-                                <i class="fa-sharp fa-solid fa-at"></i>
-                            </a>
-                            <a href="https://t.me/kiprin_egor" alt="Telegram" class="footer__social_item">
-                                <i class="fa-brands fa-telegram"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="footer__links">
-                            <div class="footer__link"><div>Telegram: <a href="https://t.me/kiprin_egor">kiprin_egor</a></div> </div>
-                            <div class="footer__link"><div>Почта: <a href="mailto:kiprin.egor@yandex.ru">kiprin.egor@yandex.ru</a></div></div>
-                            <div class="footer__link"><div>GitHub: <br><a href="https://github.com/konung-nvkz"> konung-nvkz</a></div></div>
-                        </div>
-                    </div>
+    </section>
+    <section class="resume">
+        <div class="container">
+            <h2 class="title title__fs16 title__section-title"> Опыт </h2>
+            <div class="title title__fs36 title__section-subtitle">Чем я буду полезен</div>
+            <div class="divider"></div>
+
+            <div class="resume__wrapper">
+                <div class="resume__column">
+                    <h3 class="title title__fs20 resume__column-title">Образование</h3>
+                    <ul>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/university.svg" alt="university">
+                                    </div>
+                                    <h4 class="title title__fs14">Кузбасская государственная педагогическая академия</h4>
+                                    <div class="resume__item-location">Диплом специалиста | Новокузнецк (2002-2007)</div>
+                                </div>
+                                <!-- Блоки с текстом можно поменять на <p></p> -->
+                                <div class="resume__item-body">
+                                    Кафедра: английской филологии<br>
+                                    Специальность: иностранный язык<br>
+                                    Форма обучения: дневное отделение <br><br><br>
+                                </div>
+                            </div>
+                        </li>
+                        <h3 class="title title__fs20 resume__column-title">Дополнительное образование</h3>
+                        <li>
+                            
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/courses.svg" alt="courses">
+                                    </div>
+                                    <h4 class="title title__fs14">Komatsu</h4>
+                                    <div class="resume__item-location">Курс: «Cybersecurity Awareness Training FY 21 SEC2» </div>
+                                </div>
+                                <div class="resume__item-body">
+                                    Организатор курса: «Komatsu» <br>
+                                    Дата завершения: январь 2022
+                                </div>
+                            </div>
+                        </li>
+                        <li>                            
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/courses.svg" alt="courses">
+                                    </div>
+                                    <h4 class="title title__fs14">Komatsu</h4>
+                                    <div class="resume__item-location">Курс: «Komatsu's worldwide code of business conduct </div>
+                                </div>
+                                <div class="resume__item-body">
+                                    Организатор курса: «Komatsu» <br>
+                                    Дата завершения: март 2021
+                                </div>
+                            </div>
+                        </li>
+                        <li>                            
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/courses.svg" alt="courses">
+                                    </div>
+                                    <h4 class="title title__fs14">АНО УМЦ «Финконт» | Санкт-Петербург</h4>
+                                    <div class="resume__item-location">Курс: «Международная транспортная логистика»</div>
+                                </div>
+                                <div class="resume__item-body">    
+                                    Организатор курса: АНО УМЦ «Финконт»<br>
+                                    Дата завершения: ноябрь 2019
+                                </div>
+                            </div>
+                        </li>
+                        <li>                            
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/courses.svg" alt="courses">
+                                    </div>
+                                    <h4 class="title title__fs14">АНО ДПО УЦ «Сибинфоцентр» | Новосибирск</h4>
+                                    <div class="resume__item-location">Курс: «Расширенные возможности использования MS Excel при работе с данными» </div>
+                                </div>
+                                <div class="resume__item-body">
+                                    Организатор курса: АНО ДПО УЦ «Сибинфоцентр»  <br>
+                                    Дата завершения: декабрь 2018
+                                </div>
+                            </div>
+                        </li>
+                        <li>                            
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/courses.svg" alt="courses">
+                                    </div>
+                                    <h4 class="title title__fs14">Komatsu</h4>
+                                    <div class="resume__item-location">Курс: «Compliance short: International trade compliance»</div>
+                                </div>
+                                <div class="resume__item-body">
+                                    Организатор курса: «Komatsu» <br>
+                                    Дата завершения: декабрь 2018
+                                </div>
+                            </div>
+                        </li>
+                        <li>                            
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/courses.svg" alt="courses">
+                                    </div>
+                                    <h4 class="title title__fs14">Komatsu</h4>
+                                    <div class="resume__item-location">Курс: «GDPR and the General Personal Data Protection Policy»</div>
+                                </div>
+                                <div class="resume__item-body">
+                                    Организатор курса: «Komatsu» <br>
+                                    Дата завершения: июнь 2018
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="footer__lastline">(C) Егор Киприн, 2022-2023, Новокузнецк (GMT+07:00)</div>
-            </section>   
-    </body>
-</html>  
+                <div class="resume__column">
+                    <h3 class="title title__fs20 resume__column-title">Опыт работы</h3>
+                    <ul>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/logistics.svg" alt="logistics">
+                                    </div>
+                                    <h4 class="title title__fs14">Специалист по логистике</h4>
+                                    <div class="resume__item-location">Komatsu Russia (ООО "Джой глобал")| Новокузнецк (2015-2022)</div>
+                                </div>
+                                <div class="resume__item-body">
+                                    Основные обязанности: <br>
+                                    Логистика поставок запчастей для горношахтного оборудования из США, Польши (профилирование, снижение транспортных расходов, работа с транспортными документами);
+                                    Работа в SAP (модули MM, SD, LW, PP) - внесение и редактирование, анализ данных; <br>
+                                    Помимо основных обязанностей обучал работе в системе коллег, готовил инструкции по использованию транзакций.<br> <br>
+                                    Достижения:<br>
+                                    Участвовал в процессе внедрения нескольких новых транзакций, соответствующих обновлённым требованиям законодательства;<br>
+                                    Упорядочил и существенно дополнил список локально закупаемой номенклатуры (более 30 тысяч новых артикулов).<br>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/designer.svg" alt="science">
+                                    </div>
+                                    <h4 class="title title__fs14">Учитель английского языка</h4>
+                                    <div class="resume__item-location">МБОУ «СОШ № 56» | Новокузнецк (2014-2015)</div>
+                                </div>
+                                <div class="resume__item-body">
+                                    Обязанности:<br>
+                                    Обучение школьников английскому языку в рамках требований ФГОС.<br><br>
+                                    Достижения:<br>
+                                    Подготовил учебные программы для 2-7 классов;<br>
+                                    Организовал несколько мероприятий для младших и средних школьников.<br>                                    
+                                </div>
+                            </div>
+                        </li>                        
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/designer.svg" alt="science">
+                                    </div>
+                                    <h4 class="title title__fs14">Ассистент кафедры английского языка и методики преподавания</h4>
+                                    <div class="resume__item-location">ФГБОУ ВПО ЦПО НФИ КемГУ (ранее КузГПА)| Новокузнецк (2010-2014)</div>
+                                </div>
+                                <div class="resume__item-body">
+                                    Обязанности: <br>
+                                    Подготовка и проведение занятий по научно-техническому переводу (НТП) и английскому языку в соответствии с учебным планом;<br><br>
+                                    Достижения:<br>
+                                    Разработал и внедрил в обучение практический курс НТП (компьютерный аспект).<br>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/designer.svg" alt="science">
+                                    </div>
+                                    <h4 class="title title__fs14">Начальник информационного ресурсного центра факультета иностранных языков</h4>
+                                    <div class="resume__item-location">ФГБОУ ВПО ЦПО НФИ КемГУ (ранее КузГПА)| Новокузнецк (2009-2014)</div>
+                                </div>
+                                <div class="resume__item-body">
+                                    Обязанности:<br>
+                                    Руководил отделом;<br>
+                                    Организовывал обслуживание системы средств ИКТ в учебном процессе;<br>
+                                    Развивал и заполнял сайт факультета иностранных языков КузГПА;<br><br>
+                                    Достижения:<br>
+                                    Неоднократно организовывал проведение языковой олимпиады среди школьников и студентов «LinguaSTAR».<br>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/designer.svg" alt="science">
+                                    </div>
+                                    <h4 class="title title__fs14">Начальник отдела новостей</h4>
+                                    <div class="resume__item-location"> МП «Редакция газеты «Новокузнецк» | Новокузнецк (2007-2009)</div>
+                                </div>
+                                <div class="resume__item-body">
+                                    Обязанности:<br>
+                                    Поиск и обработка новостей для печатной газеты;<br>
+                                    Написание статей различной тематики в соответствии с заданием редактора<br>
+                                    Заполнение сайта издания.<br><br>
+                                    Достижения:<br>
+                                    Одержал победу на городском конкурсе профессионального мастерства.<br>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="skills">
+    <div class="container">
+        <h2 class="title title__fs16 title__section-title"> Навыки</h2>
+        <div class="title title__fs36 title__section-subtitle">Что я использую в работе</div>
+        <div class="divider"></div>
+
+        <div class="skills__items">
+            <div class="skills__item">
+                <div class="skills__item-img">
+                    <img src="icons/skills/html5.svg" alt="html" class="skils__item_img">
+                </div>                
+                <div class="title title__fs14"> HTML5 </div>
+                <p>Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта
+                </p>
+            </div>       
+            <div class="skills__item">
+                <div class="skills__item-img">
+                    <img src="icons/skills/css3.svg" alt="css3" class="skils__item_img">
+                </div>                
+                <div class="title title__fs14"> CSS3 </div>
+                <p>Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!
+                    
+                </p>
+            </div>        
+            <div class="skills__item">
+                <div class="skills__item-img">
+                    <img src="icons/skills/JS.svg" alt="JS" class="skils__item_img">
+                </div>                
+                <div class="title title__fs14"> Java Script </div>
+                <p>Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое               </p>
+            </div>
+            <div class="skills__item">
+                <div class="skills__item-img">
+                    <img src="icons/skills/react.svg" alt="React" class="skils__item_img">
+                </div>                
+                <div class="title title__fs14"> React </div>
+                <p>Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели
+                </p>
+            </div>
+            <div class="skills__item">
+                <div class="skills__item-img">
+                    <img src="icons/skills/node.js.svg" alt="nodejs" class="skils__item_img">
+                </div>                
+                <div class="title title__fs14"> NodeJS </div>
+                <p>Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит
+                </p>
+            </div>
+            <div class="skills__item">
+                <div class="skills__item-img">
+                    <img src="icons/skills/w3c.png" alt="w3c" class="skils__item_img">
+                </div>                
+                <div class="title title__fs14"> CSS Validation Service </div>
+                <p>Этот сервис позволяет проверить каскадные таблицы стилей (CSS) и документов (X)HTML с таблицами стилей. Разметка, соответствующая стандарту, не только выглядит лучше, но и позволяет избежать множества неприятных моментов.
+                </p>
+            </div>
+        </div>
+
+        <div class="skills__ratings">
+            <div class="skills__ratings-item">
+                <div class="title title__fs14 skills__ratings-title">Создание сайтов</div>
+                <div class="skills__ratings-counter">100%</div>
+                <div class="skills__ratings-line">
+                    <span></span>
+                </div>
+            </div>
+            <div class="skills__ratings-item">
+                <div class="title title__fs14 skills__ratings-title">Создание приложений</div>
+                <div class="skills__ratings-counter">30%</div>
+                <div class="skills__ratings-line">
+                    <span style="width: 85%"></span>
+                </div>
+            </div>
+            <div class="skills__ratings-item">
+                <div class="title title__fs14 skills__ratings-title">Работа с данными</div>
+                <div class="skills__ratings-counter">90%</div>
+                <div class="skills__ratings-line">
+                    <span></span>
+                </div>
+            </div>
+            <div class="skills__ratings-item">
+                <div class="title title__fs14 skills__ratings-title">Креативность</div>
+                <div class="skills__ratings-counter">65%</div>
+                <div class="skills__ratings-line">
+                    <span></span>
+                </div>
+            </div>
+            <div class="skills__ratings-item">
+                <div class="title title__fs14 skills__ratings-title">Создание дизайна</div>
+                <div class="skills__ratings-counter">88%</div>
+                <div class="skills__ratings-line">
+                    <span></span>
+                </div>
+            </div>
+            <div class="skills__ratings-item">
+                <div class="title title__fs14 skills__ratings-title">Soft skills</div>
+                <div class="skills__ratings-counter">95%</div>
+                <div class="skills__ratings-line">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+</section>
+
+<section class="portfolio">
+    <div class="container">
+        <h2 class="title title__fs16 title__section-title"> Портфолио</h2>
+        <div class="title title__fs36 title__section-subtitle"> Мои работы</div>
+        <div class="divider"></div>
+
+        <div id="portfolio" class="portfolio__wrapper">
+            <a href="#" class="portfolio__item">
+                <img src="img/works/bread.jpg" alt="some pic">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="img/works/bread.jpg" alt="some pic">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="img/works/bread.jpg" alt="some pic">
+            </a>
+            <a href="#" class="portfolio__item vertical">
+                <img src="img/works/plans.jpg" alt="some pic">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="img/works/bread.jpg" alt="some pic">
+            </a>
+            <a href="#" class="portfolio__item horizontal">
+                <img src="img/works/mac.jpg" alt="some pic">
+            </a>   
+        </div>
+    </div>
+
+</section>
+
+<section class="price">
+    <div class="container">
+        <h2 class="title title__fs16 title__section-title">Прайс-лист</h2>        
+        <div class="divider"></div>
+
+        <div class="price__wrapper">
+            <div class="price__item">
+                <div class="price__type">Landing-page</div>
+                <div class="price__count">от 28000 руб.</div>
+                <div class="price__descr">
+                    Одностраничный сайт для презентации услуг/товаров/...
+                </div>
+            </div>
+            <div class="price__item">
+                <div class="price__type">Web-приложение</div>
+                <div class="price__count">от 48000 руб.</div>
+                <div class="price__descr">
+                    Приложение внутри браузера для лучшего комфорта
+                </div>
+            </div>
+            <div class="price__item">
+                <div class="price__type">Корпоративный сайт</div>
+                <div class="price__count">от 100000 руб.</div>
+                <div class="price__descr">
+                    Сайт для вашего бизнеса или компании
+                </div>
+            </div>
+            <div class="price__item">
+                <div class="price__type">Android/IOS Приложение</div>
+                <div class="price__count">от 55000 руб.</div>
+                <div class="price__descr">
+                    Приложение для смартфона любой ОС
+                </div>
+            </div>
+            <div class="price__item">
+                <div class="price__type">Интернет-магазин</div>
+                <div class="price__count">Индивидуально.</div>
+                <div class="price__descr">
+                    Инструмент для ваших продаж в сети
+                </div>
+            </div>
+            <div class="price__item">
+                <div class="price__type">Дизайн</div>
+                <div class="price__count">Индивидуально</div>
+                <div class="price__descr">
+                    Создам дизайн для вашего сайта/приложения...
+                </div>
+            </div>
+        </div>
+    </div> 
+</section>
+<section class="contacts">
+    <div class="container">
+        <div class="contacts__wrapper">
+            <div class="contacts__photo">
+                <img src="img/main_photo.jpg" alt="photo">
+            </div>        
+            <div class="contacts__descr">
+                <h2 class="title title__fs16 contacts__title"> Контакты</h2>
+                <div class="title title__fs36 contacts__subtitle"> Свяжитесь со мной</div>
+                <div class="divider"></div>
+
+                <div class="title title__fs14 contacts__text">
+                    Любым удобным для вас способом
+                </div>                   
+                <div class="contacts__social">
+                    <a href="https://t.me/kiprin_egor" class="contacts__link"><img src="./icons/social/telegram.svg" alt="Telegram"></a>
+                    <a href="mailto:kiprin.egor@yandex.ru" class="contacts__link"><img src="./icons/social/email.svg" alt="E-mail"></a>
+                    <a href="https://github.com/konung-nvkz" class="contacts__link"><img src="./icons/social/github.svg" alt="GitHub"></a>
+                    </a>
+                </div>
+                <div class="title title__fs14 contacts__text"> 
+                    Или оставьте ваши данные, и я сам вам напишу:
+                </div>
+
+                <form action="#" class="contacts__form">
+                        <div class="contacts__input">
+                            <input required name="name" id="name" type="text">
+                            <label for="name">Ваше имя</label>
+                        </div>
+                        <div class="contacts__input">
+                            <input required name="email" id="email" type="email">
+                            <label for="email">Ваша почта</label>
+                        </div>
+
+                        <div class="contacts__textarea">
+                            <textarea name="text" id="text"></textarea>
+                            <label for="text">Ваше сообщение</label>
+                        </div>
+                        <div class="contacts__triggers">
+                            <button class="contacts__btn btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                            </div>
+                        </div>
+                    </form>                
+            </div>
+        </div>
+    </div>
+</section>
+<a href="#up" class="pageup">
+    <img src="./icons/up.svg" alt="up">
+</a>
+    <script src="js/script.js"></script>
+</body>
+</html>

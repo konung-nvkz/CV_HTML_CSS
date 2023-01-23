@@ -1,0 +1,13 @@
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 130px;
+  right: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  opacity: 50%;
+}
+
+.pageup img {
+  width: 100%;
+}

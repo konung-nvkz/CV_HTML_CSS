@@ -1,0 +1,39 @@
+.title {
+  font-weight: bold;
+  color: #2d2a26;
+  font-size: 36px;
+}
+
+.title__fs14 {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.title__fs16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.title__fs20 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.title__fs36 {
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: normal;
+}
+
+.title__fs48 {
+  font-size: 48px;
+}
+
+.frame {
+  opacity: 75%;
+  background-color: #ece6de;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.65);
+  border-radius: 3px;
+  padding: 5px;
+  text-align: center;
+}

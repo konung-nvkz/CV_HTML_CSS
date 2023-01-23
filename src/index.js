@@ -1,5 +1,5 @@
-import './index.scss';
-import image from './img/photo_main.jpg';
+import './scss/style.scss';
+import image from './img/main_bg.jpg';
 import * as script from './js/script';
 
 // создаем элемент заголовка

@@ -11,7 +11,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/konung-nvkz/CV_HTML_CSS.git"
+		"url": "git+https://github.com/konung-nvkz/CV_courses.git"
 	},
 	"author": "",
 	"license": "ISC",
@@ -21,9 +21,9 @@
 		"not op_mini all"
 	],
 	"bugs": {
-		"url": "https://github.com/konung-nvkz/CV_HTML_CSS/issues"
+		"url": "https://github.com/konung-nvkz/CV_courses/issues"
 	},
-	"homepage": "https://github.com/konung-nvkz/CV_HTML_CSS#readme",
+	"homepage": "https://github.com/konung-nvkz/CV_courses#readme",
 	"devDependencies": {
 		"@babel/cli": "^7.19.3",
 		"@babel/core": "^7.20.5",
