@@ -6,7 +6,7 @@
 
 @media (max-width: 1200px) {
   .container {
-    min-width: 960px;
+    max-width: 960px;
   }
   .about__wrapper {
     grid-template-columns: 400px 520px;
@@ -20,14 +20,48 @@
     grid-template-columns: 40px 195px;
     column-gap: 15px;
   }
+  .resume__wrapper {
+    column-gap: 75px;
+    padding: 40px 20px 0 20px;
+  }
+  .skills__items {
+    grid-template-columns: repeat(auto-fit, 270px);
+    justify-content: space-between;
+  }
+  .skills__ratings {
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-auto-rows: minmax(70px, auto);
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  .portfolio__wrapper {
+    grid-template-columns: repeat(auto-fit, 280px);
+    grid-auto-rows: 280px;
+    justify-content: space-around;
+    row-gap: 35px;
+  }
+  .portfolio__wrapper .horizontal, .portfolio__wrapper .vertical {
+    grid-row: unset;
+    grid-column: unset;
+  }
 }
 
 @media (max-width: 992px) {
   .container {
-    min-width: 720px;
+    max-width: 720px;
+  }
+  .title {
+    max-width: 720px;
   }
   .title__fs36 {
     font-size: 30px;
+    line-height: 42px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .divider {
+    margin: 0 auto;
+    margin-top: 15px;
   }
   .about__wrapper {
     grid-template-columns: 300px 380px;
@@ -40,11 +74,37 @@
     grid-template-columns: 40px 320px;
     column-gap: 20px;
   }
+  .resume {
+    padding-top: 30px;
+  }
+  .resume__wrapper {
+    column-gap: 60px;
+    grid-template-columns: repeat(2, 320px);
+  }
+  .skills__items {
+    padding: 0 20px;
+  }
+  .skills__ratings {
+    grid-template-columns: repeat(auto-fit, 320px);
+    justify-content: space-evenly;
+    padding: 0;
+    column-gap: 0;
+  }
+  .skills__ratings-line {
+    width: 100%;
+  }
+  .portfolio__wrapper {
+    row-gap: 55px;
+  }
+  .price__wrapper {
+    grid-template-columns: repeat(auto-fit, 350px);
+    padding: 0;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
-    min-width: 540px;
+    max-width: 540px;
   }
   .title__fs48 {
     font-size: 28px;
@@ -74,6 +134,34 @@
   .about__skills-item {
     grid-template-columns: 40px 200px;
     column-gap: 20px;
+  }
+  .resume {
+    padding-top: 40px;
+  }
+  .resume__wrapper {
+    grid-template-columns: 1fr;
+    column-gap: 25px;
+    row-gap: 40px;
+  }
+  .skills {
+    padding-top: 40px;
+  }
+  .skills__items {
+    padding: 0;
+    justify-content: center;
+    gap: 20px;
+  }
+  .skills__ratings {
+    grid-template-columns: repeat(auto-fit, 320px);
+    grid-auto-rows: minmax(70px, auto);
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .skills__ratings-line {
+    width: 100%;
+  }
+  .portfolio {
+    padding-top: 40px;
   }
 }
 
@@ -117,5 +205,14 @@
   }
   .about__descr {
     margin-top: 40px;
+  }
+  .resume__wrapper {
+    padding: 40px 5px 0 5px;
+  }
+  .skills__items {
+    margin-top: 20px;
+  }
+  .skills__ratings {
+    grid-template-columns: repeat(auto-fit, 300px);
   }
 }

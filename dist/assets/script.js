@@ -21,10 +21,10 @@ counters.forEach(function (item, i) {
 
 //JS
 // добавляем скрипт, который покажет стрелку, если мы опукаемся вниз экрана.
-document.addEventListener("scroll", function (event) {
-  if (window.scrollY > 1000) {
-    document.querySelector('.pageup').style.display = "block";
-  } else {
-    document.querySelector('.pageup').style.display = "none";
-  }
-});
+// document.addEventListener("scroll", (event) => {
+//   if (window.scrollY > 1000) {
+//       document.querySelector('.pageup').style.display = "block";
+//   } else {
+//       document.querySelector('.pageup').style.display = "none";
+//   }
+// });

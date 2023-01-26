@@ -15,11 +15,12 @@
     width: 1140px;
     margin: 0 auto;
 }
-.divider {
+.divider {    
     width: 100px;
     height: 3px;
     background-color: $main-color;
-    margin: 25px auto 0 auto;
+    margin: 25px auto 0 auto;       
+
 }
 
 @import 'blocks/promo';

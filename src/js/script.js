@@ -15,7 +15,7 @@ closeElem.addEventListener('click', () => {
 
 //Скрипт для автоматического выставления рейтигов по навыкам
 const counters = document.querySelectorAll('.skills__ratings-counter'),
-      lines = document.querySelectorAll('.skills__ratings-line span');
+    lines = document.querySelectorAll('.skills__ratings-line span');
 
 counters.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML;
@@ -23,10 +23,10 @@ counters.forEach( (item, i) => {
 
 //JS
 // добавляем скрипт, который покажет стрелку, если мы опукаемся вниз экрана.
-document.addEventListener("scroll", (event) => {
-  if (window.scrollY > 1000) {
-      document.querySelector('.pageup').style.display = "block";
-  } else {
-      document.querySelector('.pageup').style.display = "none";
-  }
-});
+// document.addEventListener("scroll", (event) => {
+//   if (window.scrollY > 1000) {
+//       document.querySelector('.pageup').style.display = "block";
+//   } else {
+//       document.querySelector('.pageup').style.display = "none";
+//   }
+// });
