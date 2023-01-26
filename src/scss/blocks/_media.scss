@@ -51,6 +51,19 @@
             }         
         }
     }
+    .contacts {
+        //padding-top: 60px;
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 400px 520px;
+        }
+        .divider {            
+            margin-top: 15px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 250px);
+        }
+    }
 
 }
 
@@ -69,7 +82,7 @@
     } 
     .divider {
         margin: 0 auto;
-        margin-top: 15px;
+        margin-top: auto;
     }
     .about {
         &__wrapper {            
@@ -117,6 +130,20 @@
             padding: 0;
         }
     }
+    .contacts {
+        padding-top: 40px;
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 300px 400px;
+        }        
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 185px);
+        }
+        .btn {            
+            padding: 8px 25px;
+            line-height: 16px;
+        }
+    }
 
 }
 @media (max-width: 768px) { 
@@ -156,6 +183,7 @@
                 column-gap: 20px;
             }
         }
+        
     }    
     .resume {
         padding-top: 40px;
@@ -184,6 +212,25 @@
     }
     .portfolio {
         padding-top: 40px;
+    }
+    .price {
+        padding-top: 40px;
+        &__wrapper {
+            margin-top: 20px;
+            justify-content: center;
+        }
+    }
+    .contacts {
+        //padding-top: 40px;
+        &__photo {
+            display: none;
+        }
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 250px);
+        }
     }
 
 }
@@ -251,5 +298,37 @@
         &__ratings {
             grid-template-columns: repeat(auto-fit,300px);
         }
+    }
+    .price {        
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 295px);
+        }
+    }
+    .contacts {
+        padding-bottom: 30px;
+        &__form {
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+        }
+        &__textarea {
+            grid-column: unset;
+            width: 100%;
+        }
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+        &__btn {
+            //order: 2;
+            max-width: 220px;
+            margin: 0 auto;
+        }
+        &__policy {
+            width: 180px;
+            margin: 0 auto;
+            line-height: 18px;
+        }
+
     }
 }

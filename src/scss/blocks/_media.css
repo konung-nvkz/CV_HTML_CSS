@@ -44,6 +44,16 @@
     grid-row: unset;
     grid-column: unset;
   }
+  .contacts__wrapper {
+    padding: 0;
+    grid-template-columns: 400px 520px;
+  }
+  .contacts .divider {
+    margin-top: 15px;
+  }
+  .contacts__form {
+    grid-template: 45px 190px 45px/repeat(2, 250px);
+  }
 }
 
 @media (max-width: 992px) {
@@ -61,7 +71,7 @@
   }
   .divider {
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: auto;
   }
   .about__wrapper {
     grid-template-columns: 300px 380px;
@@ -99,6 +109,20 @@
   .price__wrapper {
     grid-template-columns: repeat(auto-fit, 350px);
     padding: 0;
+  }
+  .contacts {
+    padding-top: 40px;
+  }
+  .contacts__wrapper {
+    padding: 0;
+    grid-template-columns: 300px 400px;
+  }
+  .contacts__form {
+    grid-template: 45px 190px 45px/repeat(2, 185px);
+  }
+  .contacts .btn {
+    padding: 8px 25px;
+    line-height: 16px;
   }
 }
 
@@ -163,6 +187,22 @@
   .portfolio {
     padding-top: 40px;
   }
+  .price {
+    padding-top: 40px;
+  }
+  .price__wrapper {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .contacts__photo {
+    display: none;
+  }
+  .contacts__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .contacts__form {
+    grid-template: 45px 190px 45px/repeat(2, 250px);
+  }
 }
 
 @media (max-width: 576px) {
@@ -214,5 +254,33 @@
   }
   .skills__ratings {
     grid-template-columns: repeat(auto-fit, 300px);
+  }
+  .price__wrapper {
+    grid-template-columns: repeat(auto-fit, 295px);
+  }
+  .contacts {
+    padding-bottom: 30px;
+  }
+  .contacts__form {
+    grid-template: 45px 45px 190px minmax(45px, auto)/1fr;
+  }
+  .contacts__textarea {
+    grid-column: unset;
+    width: 100%;
+  }
+  .contacts__triggers {
+    grid-column: unset;
+    grid-template-columns: 1fr;
+    column-gap: unset;
+    row-gap: 20px;
+  }
+  .contacts__btn {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+  .contacts__policy {
+    width: 180px;
+    margin: 0 auto;
+    line-height: 18px;
   }
 }
