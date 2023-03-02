@@ -31,7 +31,7 @@ if (window.scrollY > 1000) {
 }
 });
 //JS
-// добавляем скрипт, который покажет стрелку, если мы опукаемся вниз экрана.
+// добавляем скрипт, который покажет стрелку, если мы опуcкаемся вниз экрана.
 // document.addEventListener("scroll", (event) => {
 //     if (window.scrollY < (calc-1000) {
 //         document.querySelector('.pagedown').style.display = "block";

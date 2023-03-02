@@ -47,6 +47,29 @@ document.addEventListener("scroll", function (event) {
 //     }
 //     });
 
+// //<script>
+// // поместить все текстовые узлы в элемент <span>
+// // он занимает только то место, которое необходимо для текста
+// for (let li of tree.querySelectorAll('li')) {
+//     let span = document.createElement('span');
+//     li.prepend(span);
+//     span.append(span.nextSibling); // поместить текстовый узел внутрь элемента <span>
+//     }
+
+//     //  ловим клики на всём дереве
+//     tree.onclick = function(event) {
+
+//     if (event.target.tagName != 'SPAN') {
+//         return;
+//     }
+
+//     let childrenContainer = event.target.parentNode.querySelector('ul');
+//     if (!childrenContainer) return; // нет детей
+
+//     childrenContainer.hidden = !childrenContainer.hidden;
+// }
+// //</script>
+
 /***/ }),
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/group-css-media-queries-loader/lib/index.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss":
