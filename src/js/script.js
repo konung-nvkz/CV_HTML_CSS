@@ -1,19 +1,20 @@
-// Скрипт для бокового меню
+
+/*******Скрипты для бокового меню*/ 
 // объявляем переменные для использования
 const hamburger = document.querySelector('.hamburger'),
     menu = document.querySelector('.menu'),
-    closeElem = document.querySelector('.menu__close');
-    //hamburger.style.marginTop = `${hamburger.scrollTop-30}px`
-
-// эта часть скрывает меню 
-function closeMenu() {
-    menu.classList.remove('active'); 
-}
+    closeElem = document.querySelector('.menu__close');    
 
 //callback функция делает меню активным из невидимого
 hamburger.addEventListener('click', () => {
     menu.classList.add('active'); 
 });
+
+// Эта часть скрывает меню 
+function closeMenu() {
+    menu.classList.remove('active'); 
+}
+
 // эта часть скрывает меню при нажатии крестика сверху
 closeElem.addEventListener('click', () => {
     closeMenu();  
@@ -26,13 +27,16 @@ document.addEventListener('keydown', (e) => { // следим за нажати�
         closeMenu(); // закрываем меню
     }
 });
-
 // и при клике вне меню
 menu.addEventListener('click', (e) => { //на меню повешаем обработчик события клика        
     if (e.target === menu){ //если пользователь кликнул вне меню, то
         closeMenu(); // закрываем меню
     }
 });
+
+
+/************ */
+
 
 //Скрипт для автоматического выставления рейтингов по навыкам
 const counters = document.querySelectorAll('.skills__ratings-counter'),

@@ -1,5 +1,5 @@
 .about {
-    position: relative;    
+    //position: relative;    //когда раскомментировано, не работает hamburger.hover
     padding-top: 120px;
     &__wrapper {
         display: grid;
