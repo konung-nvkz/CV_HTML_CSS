@@ -22,7 +22,7 @@ counters.forEach( (item, i) => {
 });
 
 //JS
-// добавляем скрипт, который покажет стрелку, если мы опукаемся вниз экрана.
+// добавляем скрипт, который покажет стрелку, если мы опускаемся вниз экрана.
 document.addEventListener("scroll", (event) => {
 if (window.scrollY > 1000) {
     document.querySelector('.pageup').style.display = "block";
