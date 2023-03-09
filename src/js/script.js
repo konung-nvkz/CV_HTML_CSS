@@ -2,18 +2,39 @@
 // объявляем переменные для использования
 const hamburger = document.querySelector('.hamburger'),
     menu = document.querySelector('.menu'),
-  
-closeElem = document.querySelector('.menu__close');
-//callback функция
+    closeElem = document.querySelector('.menu__close');
+    //hamburger.style.marginTop = `${hamburger.scrollTop-30}px`
+
+// эта часть скрывает меню 
+function closeMenu() {
+    menu.classList.remove('active'); 
+}
+
+//callback функция делает меню активным из невидимого
 hamburger.addEventListener('click', () => {
     menu.classList.add('active'); 
 });
 // эта часть скрывает меню при нажатии крестика сверху
 closeElem.addEventListener('click', () => {
-    menu.classList.remove('active');  
+    closeMenu();  
+});
+// будем закрывать меню при нажатии ESC
+document.addEventListener('keydown', (e) => { // следим за нажатием клавиши
+    if (e.code === "Escape" && menu.classList.contains('active')) {  //выбираем два условия
+        // 1 - нажата клавиша ESC
+        // 2 - меню окрыто
+        closeMenu(); // закрываем меню
+    }
 });
 
-//Скрипт для автоматического выставления рейтигов по навыкам
+// и при клике вне меню
+menu.addEventListener('click', (e) => { //на меню повешаем обработчик события клика        
+    if (e.target === menu){ //если пользователь кликнул вне меню, то
+        closeMenu(); // закрываем меню
+    }
+});
+
+//Скрипт для автоматического выставления рейтингов по навыкам
 const counters = document.querySelectorAll('.skills__ratings-counter'),
     lines = document.querySelectorAll('.skills__ratings-line span');
 
@@ -62,3 +83,5 @@ if (window.scrollY > 1000) {
 //     childrenContainer.hidden = !childrenContainer.hidden;
 // }
 // //</script>
+
+

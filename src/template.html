@@ -57,7 +57,7 @@
                 <img src="./icons/close.svg" alt="close"></a>
             </div>
             <nav>
-                <ul class="menu__list">
+                <ul class="menu__list" data-menu>
                     <li class="menu__link"><a href="#about">ПРО МЕНЯ</a></li>
                     <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
                     <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
@@ -73,7 +73,7 @@
                 </a>
             </div>
         </div>
-        <div class="menu__overlay"></div>
+        <!-- <div class="menu__overlay"></div> -->
     </div>
 
     <section class="promo">
@@ -864,29 +864,4 @@
 <a href="#up" class="pageup">
     <img src="./icons/up.svg" alt="up">
 </a>
-<!-- <div id="down"></div>
-    <script src="js/script.js"></script>
-</body> -->
-<!-- //<script>
-    // поместить все текстовые узлы в элемент <span>
-    // он занимает только то место, которое необходимо для текста
-    for (let li of tree.querySelectorAll('li')) {
-        let span = document.createElement('span');
-        li.prepend(span);
-        span.append(span.nextSibling); // поместить текстовый узел внутрь элемента <span>
-        }
-    
-        //  ловим клики на всём дереве
-        tree.onclick = function(event) {
-    
-        if (event.target.tagName != 'SPAN') {
-            return;
-        }
-    
-        let childrenContainer = event.target.parentNode.querySelector('ul');
-        if (!childrenContainer) return; // нет детей
-    
-        childrenContainer.hidden = !childrenContainer.hidden;
-    }
-    //</script> -->
 </html>
