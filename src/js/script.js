@@ -87,5 +87,3 @@ if (window.scrollY > 1000) {
 //     childrenContainer.hidden = !childrenContainer.hidden;
 // }
 // //</script>
-
-
