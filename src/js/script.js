@@ -33,11 +33,7 @@ menu.addEventListener('click', (e) => { //на меню повешаем обр�
         closeMenu(); // закрываем меню
     }
 });
-
-
-/************ */
-
-
+//Other scripts
 //Скрипт для автоматического выставления рейтингов по навыкам
 const counters = document.querySelectorAll('.skills__ratings-counter'),
     lines = document.querySelectorAll('.skills__ratings-line span');
@@ -55,35 +51,4 @@ if (window.scrollY > 1000) {
     document.querySelector('.pageup').style.display = "none";
 }
 });
-//JS
-// добавляем скрипт, который покажет стрелку, если мы опуcкаемся вниз экрана.
-// document.addEventListener("scroll", (event) => {
-//     if (window.scrollY < (calc-1000) {
-//         document.querySelector('.pagedown').style.display = "block";
-//     } else {
-//         document.querySelector('.pagedown').style.display = "none";
-//     }
-//     });
 
-// //<script>
-// // поместить все текстовые узлы в элемент <span>
-// // он занимает только то место, которое необходимо для текста
-// for (let li of tree.querySelectorAll('li')) {
-//     let span = document.createElement('span');
-//     li.prepend(span);
-//     span.append(span.nextSibling); // поместить текстовый узел внутрь элемента <span>
-//     }
-
-//     //  ловим клики на всём дереве
-//     tree.onclick = function(event) {
-
-//     if (event.target.tagName != 'SPAN') {
-//         return;
-//     }
-
-//     let childrenContainer = event.target.parentNode.querySelector('ul');
-//     if (!childrenContainer) return; // нет детей
-
-//     childrenContainer.hidden = !childrenContainer.hidden;
-// }
-// //</script>
