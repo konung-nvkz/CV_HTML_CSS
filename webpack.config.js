@@ -18,7 +18,7 @@ module.exports = {
 	target,
 	devtool,
 	devServer: {
-		port: 3000, //прописываем порт сервера разработки
+		port: 9000, //прописываем порт сервера разработки
 		open: true,
 		hot: true, //горячая перезагрузка
 	},
@@ -29,7 +29,8 @@ module.exports = {
 		//указываем точку выхода - каталог dist
 	output: {
 		path: path.resolve(__dirname, './dist'),
-		clean: true,
+		//clean: true,
+		clean: process.env.NODE_ENV === "production" ,
 		filename: '[name].bundle.js',
 			assetModuleFilename: 'assets/[name][ext]'
 	},
@@ -42,7 +43,6 @@ module.exports = {
 				chunks: ['main']
 		}),
 		new HtmlWebpackPlugin({
-			//title: 'CV for Egor Kiprin', // Указываем заголовок нашей страницы
 			template: path.resolve(__dirname, './src/policy.html'), // шаблон
 			filename: 'policy.html', // название выходного файла
 			chunks: ['policy']
