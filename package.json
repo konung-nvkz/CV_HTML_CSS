@@ -6,7 +6,7 @@
 	"scripts": {
 		"start": "webpack serve --open",
 		"build": "NODE_ENV=production webpack",
-		"build-dev": "webpack && node copyFiles.js",
+		"build-dev": "webpack",
 		"build-prod": "webpack --node-env=production",
 		"clear": "rd /s /q dist",
 		"json": "npx json-server db.json"

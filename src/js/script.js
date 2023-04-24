@@ -33,6 +33,7 @@ menu.addEventListener('click', (e) => { //на меню повешаем обр�
         closeMenu(); // закрываем меню
     }
 });
+
 //Other scripts
 //Скрипт для автоматического выставления рейтингов по навыкам
 const counters = document.querySelectorAll('.skills__ratings-counter'),
