@@ -10,10 +10,10 @@ At the moment I am working on chaning this project in accordance with best pract
 
 CV landing is made with a help of:
 
-+Webpack v.5.75.0,
-+Babel-loader: v.8.0.4,
-+Html-webpack-plugin:  v.5.5.0,
-+Image-webpack-loader: v. 8.1.0.
++ Webpack v.5.75.0,
++ Babel-loader: v.8.0.4,
++ Html-webpack-plugin:  v.5.5.0,
++ Image-webpack-loader: v. 8.1.0.
 
 All used technologies and dependencies can be seen in package.json file.
 
