@@ -21,12 +21,12 @@ All used technologies and dependencies can be seen in package.json file.
 
 To start local server, please download the project and then use scripts:
 
-+"start": "webpack serve --open",
-+"build": "NODE_ENV=production webpack",
-+"build-dev": "webpack",
-+"build-prod": "webpack --node-env=production",
-+"clear": "rd /s /q dist",
-+"json": "npx json-server db.json"
+*"start": "webpack serve --open",
+*"build": "NODE_ENV=production webpack",
+*"build-dev": "webpack",
+*"build-prod": "webpack --node-env=production",
+*"clear": "rd /s /q dist",
+*"json": "npx json-server db.json"
 
 ## Further development
 
@@ -34,7 +34,7 @@ As my skills grow, I plan to use this project as a platform for further exercise
 So code will be refactored, readme will be updated and some additional information can be added.
 
 At the moment my todo list for improvement contains:
-+adding Aria-attributes
-+refactoring some code
-+thinking over style of landing page
-+adding backend
+*adding Aria-attributes
+*refactoring some code
+*thinking over style of landing page
+*adding backend
