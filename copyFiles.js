@@ -1,8 +1,13 @@
+// In order to understand what does the file do.
+// it helps webpack to copy files from src to dist 
+// in order the website has all the images at one place.
+// fs-extra and path libraries are used to achieve these aims.
+// At the moment code needs refactoring.
+
 const fs = require('fs-extra');
 const path = require('path');
 
 const srcDir = path.resolve(__dirname, './src/img');
-//const destDir = path.resolve(__dirname, './dist/images');
 const destDir = path.resolve(__dirname, './dist/img');
 
 try {

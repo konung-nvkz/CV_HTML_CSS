@@ -1,7 +1,7 @@
 {
 	"name": "webpack-cv",
-	"version": "1.0.0",
-	"description": "First attempt to create a CV using obtaned knowledge in HTML/CSS/SASS/JS. Here I plan to create my CV in order to practice my skills. Will be updated later.",
+	"version": "1.0.1",
+	"description": "Attempt to create a CV using obtaned knowledge in HTML/CSS/SASS/JS. Here I plan to create my CV in order to practice my skills. Will be updated later.",
 	"main": "index.js",
 	"scripts": {
 		"start": "webpack serve --open",

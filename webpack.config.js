@@ -1,10 +1,10 @@
 // webpack.config.js настраиваем точку входа
 //описываем константу пути
 const path = require('path')
-//добавляем плагин html-webpack в список констант
+//add html-webpack plugins to the list of constants
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-//добавляем плагин для работы с CSS
+// CSS
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const mode = process.env.NODE_ENV || 'development';
