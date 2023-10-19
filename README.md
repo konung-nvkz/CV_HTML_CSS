@@ -34,7 +34,9 @@ As my skills grow, I plan to use this project as a platform for further exercise
 So code will be refactored, readme will be updated and some additional information can be added.
 
 At the moment my todo list for improvement contains:
-+ adding Aria-attributes
-+ refactoring some code
-+ thinking over style of landing page
-+ adding backend
+
++ Fill in portfolio section
++ Add Aria-attributes
++ Add backend
++ Refactor some code
++ Think over style of landing page
