@@ -1,41 +1,45 @@
+/*Scripts for side menu*/
+/*Initialize variables */
 
-/*******Скрипты для бокового меню*/ 
-// объявляем переменные для использования
 const hamburger = document.querySelector('.hamburger'),
     menu = document.querySelector('.menu'),
     closeElem = document.querySelector('.menu__close');    
 
-//callback функция делает меню активным из невидимого
+//Callback function that changes menu visibility by adding "active" status.
 hamburger.addEventListener('click', () => {
     menu.classList.add('active'); 
 });
 
-// Эта часть скрывает меню 
+// Hide menu by removing "active" status from it 
 function closeMenu() {
     menu.classList.remove('active'); 
 }
 
-// эта часть скрывает меню при нажатии крестика сверху
+// Hide menu by clicking on the cross on top side
 closeElem.addEventListener('click', () => {
     closeMenu();  
 });
-// будем закрывать меню при нажатии ESC
-document.addEventListener('keydown', (e) => { // следим за нажатием клавиши
-    if (e.code === "Escape" && menu.classList.contains('active')) {  //выбираем два условия
-        // 1 - нажата клавиша ESC
-        // 2 - меню окрыто
-        closeMenu(); // закрываем меню
-    }
-});
-// и при клике вне меню
-menu.addEventListener('click', (e) => { //на меню повешаем обработчик события клика        
-    if (e.target === menu){ //если пользователь кликнул вне меню, то
-        closeMenu(); // закрываем меню
+
+// Hide menu by pressing ESC.
+//We add listener that works when both ESC button is pressed and menu is open; 
+//Fulfillment of these conditions leads to a call of the function, that hides menu.
+document.addEventListener('keydown', (e) => {
+    if (e.code === "Escape" && menu.classList.contains('active')) {
+        closeMenu();
     }
 });
 
-//Other scripts
-//Скрипт для автоматического выставления рейтингов по навыкам
+// The same logic when clicking off the menu:
+//Listener looks if user clicks out of the menu field and calls the function, that hides menu.
+menu.addEventListener('click', (e) => {       
+    if (e.target === menu){
+        closeMenu();
+    }
+});
+
+/*****Other scripts used on page***/
+
+//Script for automatic rating of skills
 const counters = document.querySelectorAll('.skills__ratings-counter'),
     lines = document.querySelectorAll('.skills__ratings-line span');
 
@@ -44,7 +48,7 @@ counters.forEach( (item, i) => {
 });
 
 //JS
-// добавляем скрипт, который покажет стрелку, если мы опускаемся вниз экрана.
+// The script that will show an arrow if we go down the screen.
 document.addEventListener("scroll", (event) => {
 if (window.scrollY > 1000) {
     document.querySelector('.pageup').style.display = "block";
