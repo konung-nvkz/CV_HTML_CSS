@@ -49,7 +49,7 @@ counters.forEach( (item, i) => {
 
 //JS
 // The script that will show an arrow if we go down the screen.
-document.addEventListener("scroll", (event) => {
+document.addEventListener("scroll", (e) => {
 if (window.scrollY > 1000) {
     document.querySelector('.pageup').style.display = "block";
 } else {
