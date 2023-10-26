@@ -22,6 +22,7 @@ All used technologies and dependencies can be seen in package.json file.
 To start local server, please download the project and then use scripts:
 
 + "start": "webpack serve --open",
+//this will start the project on port 9000 (can be changed manally)
 + "build": "NODE_ENV=production webpack",
 + "build-dev": "webpack",
 + "build-prod": "webpack --node-env=production",
