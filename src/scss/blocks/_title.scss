@@ -1,8 +1,7 @@
 .title {
     font-weight: bold; 
     color: #2d2a26;
-    font-size: 36px;
-    //line-height: 60px;    
+    font-size: 36px; 
     
     &__fs14 {
         font-size: 14px;
@@ -31,7 +30,6 @@
         text-align: center;
         padding: 2px 0 0 13px;
         @include skills_circle;
-        //@include before_circle;
         &:before {
             top: -6px;
             left: 50%;
@@ -40,17 +38,14 @@
     }
     &__section-subtitle {
         text-align: center;
-    }
-    
+    }  
 }
 
 .frame {
     opacity:75%;
     background-color: #ece6de;
-    //transform: skewX(-5deg);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.65);
     border-radius: 3px;
     padding: 5px;
-    //margin-left: 3px;
     text-align: center;        
 }
