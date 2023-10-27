@@ -3,6 +3,13 @@
     .divider {
         margin-bottom: 80px;
     }
+    &__skills__title {
+        &:hover {          
+            color: $main-color;
+            
+        }  
+    }
+
     &__items {
         margin-top: 60px;
         padding: 0 10px;
@@ -10,25 +17,36 @@
         grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
         grid-auto-rows: minmax(270px, auto);
         gap: 13px;
+        
     }
+    
     &__item {       
         border: 1px solid black;
         padding: 30px 30px 25px 30px;
+        border-radius: 15px;
+        &:hover {            
+            background-color: black;
+            color: $main-color;
+            transform: scale(1.05);
+            opacity: 80%;
+        }  
         &-img {
             display: flex;
             align-items: center;
             min-height: 65px;
+            
         }
         h3 {
             margin-top: 20px;
             margin-bottom: 0;
         }
+        
         p {
             margin-top: 15px;
             margin-bottom: 0;
             font-size: 12px;
             line-height: 18px;
-        }
+        }        
     }   
 
     &__ratings {
@@ -63,3 +81,4 @@
         }
         }
     }
+    
