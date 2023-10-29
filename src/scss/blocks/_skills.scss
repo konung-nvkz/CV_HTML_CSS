@@ -3,10 +3,9 @@
     .divider {
         margin-bottom: 80px;
     }
-    &__skills__title {
+    &__title {
         &:hover {          
-            color: $main-color;
-            
+            color: $main-color;            
         }  
     }
 
@@ -28,7 +27,7 @@
             background-color: black;
             color: $main-color;
             transform: scale(1.05);
-            opacity: 8git 0%;
+            opacity: 80%;
         }  
         &-img {
             display: flex;
@@ -68,7 +67,7 @@
         &-line {
             width: 350px;
             height: 14px;
-            background-color: #E8E4DE;
+            background-color: $line-color;
             border-radius: 4px;
             grid-column: 1 / 3;
             
