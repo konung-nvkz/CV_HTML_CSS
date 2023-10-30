@@ -1,7 +1,16 @@
-// webpack.config.js настраиваем точку входа
-//описываем константу пути
+/** This file is necessary for Webpack settings
+May be reused for other projects **/
+
+/*path is Node.js native utility module.
+The path.resolve() method resolves a sequence of paths or path segments into an absolute path.*/
 const path = require('path')
-//add html-webpack plugins to the list of constants
+
+/* Add html-webpack plugins to the list of constants
+HtmlWebpackPlugin simplifies creation of HTML files to serve webpack bundles. 
+This is useful for webpack bundles that include a hash in the filename which changes every compilation. 
+(Here I do not use hashed version)
+You can either let the plugin generate an HTML file for you, 
+supply your own template using lodash templates, or use your own loader.*/
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 // CSS
@@ -18,35 +27,41 @@ module.exports = {
 	target,
 	devtool,
 	devServer: {
-		port: 9000, //прописываем порт сервера разработки
+		port: 9000, //set dev server open port
 		open: true,
-		hot: true, //горячая перезагрузка
+		hot: true, //enable hot reload
 	},
-		//указываем точку входа
+		//set entry point
 	entry: {
 		main: path.resolve(__dirname, './src/index.js'),
 	},
-		//указываем точку выхода - каталог dist
+		//set exit point (this time it is "dist" catalogue)
 	output: {
 		path: path.resolve(__dirname, './dist'),
-		//clean: true,
+		//set clean: true,
 		clean: process.env.NODE_ENV === "production" ,
 		filename: '[name].bundle.js',
 			assetModuleFilename: 'assets/[name][ext]'
 	},
-    //начинаем работу с плагинами
+    //start working with plugins
 	plugins: [
 		new HtmlWebpackPlugin({
-				title: 'CV for Egor Kiprin', // Указываем заголовок нашей страницы
-				template: path.resolve(__dirname, './src/template.html'), // шаблон
-				filename: 'index.html', // название выходного файла
+				title: 'CV for Egor Kiprin', // Set header for our start page
+				template: path.resolve(__dirname, './src/template.html'),
+				filename: 'index.html', // name of the output file
 				chunks: ['main']
 		}),
+		// do the same job for other files: police and map
 		new HtmlWebpackPlugin({
-			template: path.resolve(__dirname, './src/policy.html'), // шаблон
-			filename: 'policy.html', // название выходного файла
+			template: path.resolve(__dirname, './src/policy.html'), 
+			filename: 'policy.html',
 			chunks: ['policy']
 			}),
+			new HtmlWebpackPlugin({
+				template: path.resolve(__dirname, './src/map.html'),
+				filename: 'map.html', 
+				chunks: ['map']
+				}),
 		//new CleanWebpackPlugin(),
 		new MiniCssExtractPlugin({
 			filename: '[name].[contenthash].css',
@@ -114,8 +129,8 @@ module.exports = {
 			test: /\.m?js$/i,
 			exclude: /(node_modules|bower_components)/,
 			use: {
-			loader: 'babel-loader', // JavaScript
-			options: {
+			loader: 'babel-loader', // enable older JavaScript
+ 			options: {
 				presets: ['@babel/preset-env'],
 			},
 			},
