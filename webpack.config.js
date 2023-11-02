@@ -57,12 +57,12 @@ module.exports = {
 			filename: 'policy.html',
 			chunks: ['policy']
 			}),
-			new HtmlWebpackPlugin({
-				template: path.resolve(__dirname, './src/map.html'),
-				filename: 'map.html', 
-				chunks: ['map']
-				}),
-		//new CleanWebpackPlugin(),
+		new HtmlWebpackPlugin({
+			template: path.resolve(__dirname, './src/map.html'),
+			filename: 'map.html', 
+			chunks: ['map']
+			}),
+		
 		new MiniCssExtractPlugin({
 			filename: '[name].[contenthash].css',
 		}),
