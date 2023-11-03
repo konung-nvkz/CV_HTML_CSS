@@ -4,16 +4,14 @@
         position: absolute;        
         z-index: -1;
         top: 0px;
-        //left: 2;
         right:5px;
         width: 45px;
         height: 45px;
         border-radius:100%;
         background: $main-color;
-
     }
-
 }
+
 @mixin before_circle_revised {
     &:before {
         content: '';
@@ -25,10 +23,9 @@
         height: 40px;
         border-radius:100%;
         background: $main-color;
-
     }
-
 }
+
 @mixin skills_circle {
     &:before {
         content: '';
@@ -40,7 +37,5 @@
         height: 40px;
         border-radius:100%;
         background: $main-color;
-
     }
-
 }

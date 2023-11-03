@@ -8,12 +8,14 @@
         width: 270px;
         margin-top: 10px;            
     }
+
     &__subtitle {
         position: relative;
         padding-left: 10px;         
         width: 270px;      
         @include before_circle_revised;            
     }
+
     &__btns {
         margin-top: 25px;
         display: flex;
@@ -28,16 +30,14 @@
             } 
         }
     }
+    
     &__link {
         color: #000000;
         font-weight: bold;
-
         &:hover{
             color: #000000;
             text-decoration: none;
             transform: scale(1.05);
         }
-
     }   
-
 }

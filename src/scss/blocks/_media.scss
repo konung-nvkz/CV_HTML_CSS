@@ -51,8 +51,7 @@
             }         
         }
     }
-    .contacts {
-        //padding-top: 60px;
+    .contacts {        
         &__wrapper {
             padding: 0;
             grid-template-columns: 400px 520px;
@@ -89,7 +88,7 @@
             grid-template-columns: 300px 380px;
         }
         &__skills {
-            grid-template-columns: 380px; //sub grid делаем одной колонкой на данном разрешении экрана
+            grid-template-columns: 380px; //sub grid make a single column at this resolution
             grid-auto-rows: minmax(115px,auto);
             &-item {
                 grid-template-columns: 40px 320px;
@@ -144,7 +143,6 @@
             line-height: 16px;
         }
     }
-
 }
 @media (max-width: 768px) { 
     .container {
@@ -169,8 +167,7 @@
         &__photo {
             grid-row: unset;
             img {
-                width: auto;
-               // height:auto;            
+                width: auto;           
             }
             }
         &__descr {
@@ -182,8 +179,7 @@
                 grid-template-columns: 40px 200px;
                 column-gap: 20px;
             }
-        }
-        
+        }       
     }    
     .resume {
         padding-top: 40px;
@@ -220,8 +216,7 @@
             justify-content: center;
         }
     }
-    .contacts {
-        //padding-top: 40px;
+    .contacts {        
         &__photo {
             display: none;
         }
@@ -232,7 +227,6 @@
             grid-template: 45px 190px 45px / repeat(2, 250px);
         }
     }
-
 }
 
 
@@ -270,7 +264,6 @@
             margin-top: 60px;
         }
         &__photo {
-            // grid-row: unset;
             img {
                 width: auto;
                 height:auto;            
@@ -319,8 +312,7 @@
             column-gap: unset;
             row-gap: 20px;
         }
-        &__btn {
-            //order: 2;
+        &__btn {            
             max-width: 220px;
             margin: 0 auto;
         }
@@ -329,6 +321,5 @@
             margin: 0 auto;
             line-height: 18px;
         }
-
     }
 }

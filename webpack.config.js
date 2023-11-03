@@ -56,12 +56,7 @@ module.exports = {
 			template: path.resolve(__dirname, './src/policy.html'), 
 			filename: 'policy.html',
 			chunks: ['policy']
-			}),
-		new HtmlWebpackPlugin({
-			template: path.resolve(__dirname, './src/map.html'),
-			filename: 'map.html', 
-			chunks: ['map']
-			}),
+			}),		
 		
 		new MiniCssExtractPlugin({
 			filename: '[name].[contenthash].css',
